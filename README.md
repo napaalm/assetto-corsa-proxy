@@ -18,5 +18,9 @@ To start the proxy:
 ```
 To stop the proxy:
 ```
-./start-proxy.sh
+./stop-proxy.sh
 ```
+
+# License
+
+This software is distributed under [GPL 3+](LICENSE.md)
