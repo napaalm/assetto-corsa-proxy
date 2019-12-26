@@ -23,4 +23,4 @@ To stop the proxy:
 
 # License
 
-This software is distributed under [GPL 3+](LICENSE.md)
+This software is distributed under [GPL 3+](LICENSE)
