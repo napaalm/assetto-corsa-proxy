@@ -1,4 +1,4 @@
-# assetto-corsa-proxy.sh
+# assetto-corsa-proxy
 
 Simple script that creates a proxy to an Assetto Corsa server. Requires rsproxy.
 
