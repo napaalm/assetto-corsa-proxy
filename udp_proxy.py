@@ -35,8 +35,8 @@ def launch(server_addr):
     print("Sending magic packet...")
     server_socket.sendto(b'\xc8\x91\x1f', client_address)
 
-    client_handler = Thread(target=handle_client)
-    server_handler = Thread(target=handle_server)
-    print("Listening...")
-    client_handler.start()
-    server_handler.start()
+    #client_handler = Thread(target=handle_client)
+    #server_handler = Thread(target=handle_server)
+    #print("Listening...")
+    #client_handler.start()
+    #server_handler.start()
