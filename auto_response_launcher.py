@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from udp_proxy import launch
+from auto_response import launch
 from sys import argv
 
 def main():
