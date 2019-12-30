@@ -21,9 +21,8 @@ then
   echo "Another istance of the proxy is already running!"
   read -p "Do you want to kill it? [y/n]: " yn
   if [[ $yn == [Yy]* ]]; then
-    fuser -k 9600/tcp &> /dev/null
-    fuser -k 8081/tcp &> /dev/null
-    fuser -k 9600/udp &> /dev/null
+    ./stop-proxy.sh
+    sleep 0.1
     echo "Killed! Starting..."
   else
     echo "Aborted" ; exit 1
