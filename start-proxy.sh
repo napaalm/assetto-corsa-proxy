@@ -22,7 +22,6 @@ then
   read -p "Do you want to kill it? [y/n]: " yn
   if [[ $yn == [Yy]* ]]; then
     ./stop-proxy.sh
-    sleep 0.1
     echo "Killed! Starting..."
   else
     echo "Aborted" ; exit 1
