@@ -35,4 +35,4 @@ echo ""
 
 rsproxy -t -b 0.0.0.0 -l 8081 -h $HOST -r 8081 &
 rsproxy -t -b 0.0.0.0 -l 9600 -h $HOST -r 9600 &
-./udp_proxy_launcher.py $HOST && rsproxy -u -b 0.0.0.0 -l 9600 -h $HOST -r 9600 &
+./auto_response_launcher.py $HOST && rsproxy -u -b 0.0.0.0 -l 9600 -h $HOST -r 9600 &

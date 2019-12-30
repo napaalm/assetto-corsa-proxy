@@ -2,5 +2,5 @@ from distutils.core import setup
 from Cython.Build import cythonize
 
 setup(
-    ext_modules = cythonize("udp_proxy.py")
+    ext_modules = cythonize("auto_response.py")
 )
