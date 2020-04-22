@@ -73,6 +73,3 @@ target/
 
 # Cython
 *.c
-
-# host file
-host
