@@ -8,8 +8,7 @@ server_port = 9600
 server_socket = socket(AF_INET, SOCK_DGRAM)
 server_socket.bind(('0.0.0.0', server_port))
 
-def launch(server_addr):
-    server_address = server_addr
+def launch():
     print("Automatic response enabled...")
     client_message, client_address = server_socket.recvfrom(2048)
     print("Sending magic packet...")
