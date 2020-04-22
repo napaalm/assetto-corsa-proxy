@@ -19,14 +19,6 @@ echo "---------------------"
 echo ""
 cargo install rsproxy tcpproxy udpproxy
 
-# assetto-corsa-proxy
-echo ""
-echo "--------------------------"
-echo "Cloning the repository..."
-echo "--------------------------"
-echo ""
-git clone https://git.antonionapolitano.eu/zAxny32/assetto-corsa-proxy.git
-
 # udp_proxy
 echo ""
 echo "-----------------------------"
