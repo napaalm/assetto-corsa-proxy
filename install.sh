@@ -13,9 +13,9 @@ rm install-rust.sh
 
 # rsproxy, tcpproxy, udpproxy
 echo ""
-echo "---------------------"
-echo "Compiling rsproxy..."
-echo "---------------------"
+echo "----------------------"
+echo "Installing rsproxy..."
+echo "----------------------"
 echo ""
 cargo install rsproxy tcpproxy udpproxy
 
@@ -25,17 +25,13 @@ echo "-----------------------------"
 echo "Building the python proxy..."
 echo "-----------------------------"
 echo ""
-cd assetto-corsa-proxy
 python3 setup.py build_ext --inplace
 
 echo ""
 echo "---------------------------------------------------------"
 echo "INSTALLATION FINISHED"
 echo "---------------------------------------------------------"
-echo "Now go in the directory assetto-corsa-proxy"
-echo "where you can set the Assetto Corsa server address with:"
-echo "./set-host HOST"
-echo "and finally run the proxy with:"
-echo "./start-proxy"
+echo "Now you can run the proxy with:"
+echo "./acproxy serveraddress"
 echo "---------------------------------------------------------"
 echo ""
