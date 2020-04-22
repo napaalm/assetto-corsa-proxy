@@ -1,5 +1,5 @@
-MAINTAINER Antonio Napolitano "nap@antonionapolitano.eu"
 FROM ubuntu:18.04
+MAINTAINER Antonio Napolitano "nap@antonionapolitano.eu"
 COPY . /srv/acproxy
 RUN /srv/acproxy/install-docker.sh
 ENV server set-ac-server-address-here.com
