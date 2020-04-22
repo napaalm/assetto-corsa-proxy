@@ -1,10 +1,16 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ $# -eq 0 ]
   then
     echo "USAGE: $0 serveraddress"
     exit 1
 fi
+
+# Source directory with rust executables
+source $HOME/.cargo/env
+
+# Get directory of the script
+DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # kill processes on exit
 trap "exit" INT TERM ERR
@@ -13,6 +19,6 @@ trap "kill 0" EXIT
 # start background processes
 rsproxy -t -b 0.0.0.0 -l 8081 -h $1 -r 8081 &
 rsproxy -t -b 0.0.0.0 -l 9600 -h $1 -r 9600 &
-./auto_response_launcher.py $1 && rsproxy -u -b 0.0.0.0 -l 9600 -h $1 -r 9600 &
+$DIR/auto_response_launcher.py $1 && rsproxy -u -b 0.0.0.0 -l 9600 -h $1 -r 9600 &
 
 wait
