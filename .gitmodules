@@ -1,0 +1,3 @@
+[submodule "udpproxy"]
+	path = udpproxy
+	url = https://github.com/neosmart/udpproxy.git
